@@ -1,0 +1,24 @@
+<view>
+    <view class="form-pro" wx:if="{{_cate == '1'}}">
+        <image src="../../../assets/images/form-pro-05.png"></image>
+    </view>
+    <view class="form-pro" wx:if="{{_cate == '2'}}">
+            <image src="../../../assets/images/form-pro-06.png"></image>
+        </view>
+        <form bindsubmit="userSubmit">
+    <view class="form-body">
+        <view>
+            <text>收货人</text>
+            <view class="showinput">{{userName}}</view>
+        </view>
+        <view>
+            <text>手机号码</text>
+            <view class="showinput">{{userMobile}}</view>
+        </view>
+        <view>
+            <text>详细地址</text>
+            <view class="showinput">{{userAddress}}</view>
+        </view>
+    </view></form>
+    <view class="adv"><button class="linkminiapp" bindtap="gotominiapp">速速抢购</button></view>
+</view>

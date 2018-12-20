@@ -1,0 +1,22 @@
+<view>
+    <view class="codebox">
+                <view class="codebox-img"><image src="{{codeimg}}"></image></view>
+                <view>兑换码 {{codetxt}}</view>
+        </view>
+        <view class="storebox">
+            已选试戴门店 <text class="store">{{userStoreName}}</text>
+        </view>
+
+        <view class="form-txt">
+                    <view class="title">使用条款</view>
+                    <view><text>1.</text>活动时间：2018/12/21~2019/1/3</view>
+                    <view><text>2.</text>试戴片门店核销领取有效期: 2018/12/21~2019/1/31</view>
+                    <view><text>3.</text>每位参与活动的用户仅限参与一次抽奖,领取一张试戴券奖项（请勿多次领取，多领部分无效），仅限到店提供服务，不可代领，奖品不退不换不寄送；</view>
+                    <view><text>4.</text>客户去门店领取奖品前，必须提前1-2天预约前往门店，以便于门店确认奖品数量，敬请谅解；</view>
+                    <view><text>5.</text>可凭一张券领取两副美瞳产品，即2片晶曦+2片晶茜合计4片；若门店其中某款试戴片缺货可以领取同一款商品4片；可选度数范围：0，200，250-700度；</view>
+                    <view><text>6.</text>本商品为抽奖奖品，不产生宝岛会员积分；</view>
+                    <view><text>7.</text>一次只能核销一张试戴券，不能混合核销，如遇门店有缺光度情况，可与店员协商留下联系方式及信息,待门店调货到货后通知消费者前来领取,也可去其他门店参与领奖；</view>
+                </view>
+
+    <view class="adv"><button class="linkminiapp" bindtap="gotominiapp">速速抢购</button></view>
+</view>

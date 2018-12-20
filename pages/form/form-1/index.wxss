@@ -1,0 +1,12 @@
+page{background: url("https://werun.renlai.fun/static/cposition/formbg.jpg"); min-height: 1440rpx;background-size: 100% auto; background-repeat: no-repeat}
+.form-pro{width: 577rpx; margin: auto; padding-top:40rpx;}
+.form-pro image{width: 577rpx; height: 579rpx;display: block;}
+
+.form-body{width: 547rpx; margin: auto;padding: 0 15rpx 0 15rpx;}
+.form-body input{width: 523rpx; height: 65rpx; line-height: 65rpx; border: 1px solid #959595;margin-bottom:5rpx;font-size:24rpx; color: #333;padding-left: 20rpx;}
+.form-body input::-webkit-input-placeholder {color: #bfbfc2;}
+.form-body text{color: #838282;font-size: 24rpx;}
+
+.form-box{ text-align: center;padding: 30rpx 0 0 0}
+.btn-submit{width: 252rpx;height: 66rpx;display:inline-block;background: url("https://werun.renlai.fun/static/cposition/btn-submit.png");background-size: 100% auto;}
+.form-box text{display: block;font-size: 20rpx;}

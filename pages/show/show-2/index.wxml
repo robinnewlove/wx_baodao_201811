@@ -1,0 +1,55 @@
+<view>
+    <view class="form-pro" wx:if="{{_cate == '1'}}">
+        <image src="../../../assets/images/form-pro-07.png"></image>
+    </view>
+    <view class="form-pro-1" wx:if="{{_cate == '2'}}">
+        <image src="../../../assets/images/form-pro-08.png"></image>
+    </view>
+    <view class="form-pro-1" wx:if="{{_cate == '3'}}">
+        <image src="../../../assets/images/form-pro-09.png"></image>
+    </view>
+
+    <block  wx:if="{{_cate != '1'}}">
+    <view class="codebox" wx:if="{{issubmit == '1'}}">
+           <view class="copybox">
+            <view class="copytxt">{{contents}}</view>
+            <view  bindtap='copyText' data-text="{{contents}}" class="copybtn">复制</view>
+            </view>
+            <view class="copytip">请复制以上链接到手机浏览器中打开，获取代金券二维码，在有效期内前往星巴克门店使用。</view>
+    </view>
+    </block>
+
+    <block  wx:if="{{_cate == '1'}}">
+    <view class="codebox-1" wx:if="{{issubmit == '1'}}">
+                <view>兑换码</view>
+                <view class="codebox-txt">{{codetxt}}</view>
+    </view>
+    </block>
+
+
+
+    <view class="form-txt" wx:if="{{_cate == '1'}}">
+        <view class="title">使用条款</view>
+        <view><text>1.</text>商品介绍：本产品为价值58元的爱奇艺黄金VIP季卡。用于兑换爱奇艺视频网会员。享有免广告、专属VIP片库免费看、专属身份标识、免费获赠点播券等特权。</view>
+        <view><text>2.</text>本商品有效期至2019年3月31日止，请在有效期前绑定至您的爱奇艺账户，过期即视为无效，会员卡密码只能使用一次，再次使用无效。</view>
+        <view><text>3.</text>爱奇艺黄金VIP季卡不可兑换现金。请注意会员卡保密性，若发生盗用、泄露等问题不予调换与退款；</view>
+        <view><text>4.</text>爱奇艺黄金VIP季卡绑定成功后仅限该账户使用；</view>
+        <view><text>5.</text>本商品所包含服务内容及具体使用方式以爱奇艺官网规定的使用规则为准。</view>
+        <view><text>6.</text>手机APP兑换只适合安卓手机用户，苹果用户只能在电脑端兑换</view>
+        <view><text>7.</text>电脑PC端（苹果&安卓用户）：登录爱奇艺官网，选择“开通VIP”—“激活码支付”—输入串码，激活爱奇艺VIP会员，即可享受会员权益。</view>
+    </view>
+
+    <view class="form-txt" wx:if="{{_cate != '1'}}">
+            <view class="title">使用条款</view>
+            <view><text>1.</text>本电子代金券有效期：2019年1月31日。</view>
+            <view><text>2.</text>本电子代金券需一次性使用完毕，不可兑换现金，不找零，不与其他优惠同享。</view>
+            <view><text>3.</text>您可凭以上中奖链接所示二维码在有效期内前往中国大陆地区星巴克门店购买商品（少数门店除外）。</view>
+            <view><text>4.</text>本电子代金券仅适用于中国大陆地区星巴克门店对外销售的商品。</view>
+            <view><text>5.</text>使用本电子代金券应遵守该券的章程及相关规定 （查看章程）。</view>
+            <view><text>6.</text>本电子代金券由星巴克（上海）商业有限公司发行。</view>
+            <view><text>7.</text>如有疑问，请拨打服务热线 400-820-6998。</view>
+        </view>
+
+
+    <view class="adv"><button class="linkminiapp"  bindtap="gotominiapp">速速抢购</button></view>
+</view>

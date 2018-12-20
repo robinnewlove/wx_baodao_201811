@@ -1,0 +1,10 @@
+function storename(val) {
+    var _val;
+    _val = val / 1000;
+    _val = _val.toFixed(2);
+    return _val;
+}
+
+module.exports = {
+    storename: storename
+}

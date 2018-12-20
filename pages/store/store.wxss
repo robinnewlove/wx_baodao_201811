@@ -1,0 +1,12 @@
+page {
+  background: linear-gradient(rgba(255,237,236,1), rgba(255,191,190,1));
+}
+.storebody{padding: 30rpx 0rpx;}
+.storelist{font-size: 24rpx;border-bottom: 1px solid #eeeeee; color: #666666; padding-bottom: 20rpx;margin-bottom: 20rpx;margin: 0 30rpx; margin-top: 20rpx;background: #fff; position: relative;padding: 20rpx;overflow: hidden;}
+.storelist view{overflow: hidden; position:relative;padding-left:20rpx;line-height:40rpx;color: #999}
+.storelist image{width: 127rpx; height: 127rpx;float: left}
+.storeleft{width:100rpx; position: absolute; left: 0; text-align: right; color: #333;}
+
+.picker{font-size: 26rpx;border-bottom: 1px solid #eee;height: 50rpx;line-height: 50rpx;background: #eee;padding-left: 15rpx;}
+
+.long{position: absolute;right:20rpx; bottom:20rpx;}

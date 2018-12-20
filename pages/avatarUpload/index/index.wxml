@@ -1,0 +1,11 @@
+<view class="container flex">
+<form bindsubmit="startGame" report-submit >
+<image src="../../../assets/images/mainlogo.png" class="mainlogo"></image>
+        <image src="../../../assets/images/photo.jpg" class="uplaodbgimg"></image>
+        <view class="uploadbox"><image src="{{src}}" class="avatar" bindtap="upload"></image></view>
+        <button class="reload-btn" bindtap="upload">重新上传</button>
+        <button class="start-btn" form-type="submit"></button>
+        <view class="adv"><button class="linkminiapp"  bindtap="gotominiapp">速速抢购</button></view>
+
+</form>
+</view>

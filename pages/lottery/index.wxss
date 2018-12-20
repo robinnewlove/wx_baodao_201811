@@ -1,0 +1,23 @@
+page{background: url("https://werun.renlai.fun/static/cposition/lotterybg.jpg"); min-height: 1460rpx;background-size: 100% auto; background-repeat: no-repeat}
+
+.lotterybox{background: url("https://werun.renlai.fun/static/cposition/lotterybox.png");width: 750rpx; height: 701rpx;background-size: 100% auto;margin-top: 405rpx;}
+
+.lotteryselect{background: url("https://werun.renlai.fun/static/cposition/lotteryselect.png");width: 186rpx; height:186rpx;background-size: 100% auto;float:left;}
+.lotteryselect-on{background: url("https://werun.renlai.fun/static/cposition/lotteryselect-on.png");width: 186rpx; height:186rpx;background-size: 100% auto;float:left;}
+
+.lotteryselect image{width: 146rpx; height: 101rpx;display:block; margin: auto; margin-top: 20rpx;}
+.lotteryselect text{font-size: 20rpx;color: #666; text-align: center;display: block;}
+.lotteryselect-on text{color: #fff;}
+
+.lotterystart{width: 186rpx; height:186rpx;float:left;}
+.lotterystart image{width: 186rpx; height:186rpx;}
+.lotteryselectbox{width: 558rpx;margin: auto;padding-top: 56rpx;overflow: hidden; margin-bottom: 50rpx;}
+
+.lotterytip{font-size: 20rpx;color: #6c6669;display: block;clear: both; text-indent: 70rpx;padding-top: 10rpx;}
+
+.tipbox{background:#fca1b0;width: 500rpx; height: 340rpx;position: fixed; left: 50%; margin-left: -250rpx;top:50%;margin-top:-250rpx;box-shadow: 0px 0px 5px #ff8898;border-radius:10rpx; z-index: 999;}
+.btnget{width: 281rpx; height: 73rpx;position: absolute; bottom:40rpx;left: 50%; margin-left:-140rpx}
+.maskbox{width: 100%; height: 100%; position: fixed; background: #000; opacity: 0.4; top:0px;z-index: 998}
+
+.tipboxtxt{ padding:30px 30px; color:#fff; font-size:35rpx;text-align: center}
+

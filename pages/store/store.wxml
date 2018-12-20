@@ -1,0 +1,11 @@
+
+<wxs src="../../utils/tools.wxs" module="tools" />
+<view class="storebody">
+    <view wx:for="{{selectdata}}" wx:key="store" class="storelist" data-location="{{item.store_show_name}}" data-storeno="{{item.store_id}}" bindtap="placeChoose">
+    <view>
+        <image src="../../assets/images/baodaologo.jpg"></image>
+        <view><text class="storeright">{{item.store_show_name}}</text></view>
+        <text class="long">{{tools.storename(item.distance)}}km</text>
+        <view><text class="storeright">{{item.store_address}}</text></view>
+    </view></view>
+</view>

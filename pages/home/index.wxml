@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="wrap">
+<image src="../../assets/images/mainlogo.png" class="mainlogo"></image>
+<!--button class="button-1" bindtap="clearall">清理缓存</button-->
+<!--navigator
+    url="/pages/visit/index?openId=oa5u94mSnw-XnforEXJ03vFZULzs"
+    hover-class="navigator-hover"
+    >跳转到新页面</navigator
+ -->
+
+    <button
+            class="button"
+            open-type="getUserInfo"
+            bindgetuserinfo="bindGetUserInfo"
+        ></button>
+</view>

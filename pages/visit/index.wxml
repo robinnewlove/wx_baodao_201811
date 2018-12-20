@@ -1,0 +1,76 @@
+<view>
+    <view class="logobox"><navigator url="/pages/rule/rule" hover-class="navigator-hover">活动规则</navigator><image src="../../assets/images/logo.jpg" class="logo"></image></view>
+    <view class="resultbox">
+        <view class='radarContainer'>
+        <canvas class='radarCanvas' canvas-id='radarCanvas'></canvas>
+        <view class="text-1">颜值 {{stateValueA}}</view>
+        <view class="text-2">健康 <text>{{stateValueD}}</text></view>
+        <view class="text-3">桃花运 {{stateValueC}}</view>
+        <view class="text-4">职场 <text>{{stateValueB}}</text></view>
+        </view>
+        <view class="txt-1-tip">
+            <image src="../../assets/images/txt-1-tip.png" wx:if="{{stateValueA == '100'}}"></image>
+            <image src="../../assets/images/txt-2-tip.png" wx:if="{{stateValueB == '100'}}"></image>
+            <image src="../../assets/images/txt-3-tip.png" wx:if="{{stateValueC == '100'}}"></image>
+            <image src="../../assets/images/txt-4-tip.png" wx:if="{{stateValueD == '100'}}"></image>
+        </view>
+        <view class="radarAvatarbox"><image src="{{activityUrl}}"></image></view>
+    </view>
+    <image src="../../assets/images/txt-1.png" class="txt-1" wx:if="{{stateValueA == '100'}}"></image>
+    <image src="../../assets/images/txt-2.png" class="txt-1" wx:if="{{stateValueB == '100'}}"></image>
+    <image src="../../assets/images/txt-3.png" class="txt-1" wx:if="{{stateValueC == '100'}}"></image>
+    <image src="../../assets/images/txt-4.png" class="txt-1" wx:if="{{stateValueD == '100'}}"></image>
+    <view class="avatarbox"><image src="{{avatar}}" class="avatar"></image></view>
+    <view class="ico-list-box">
+        <view class="ico-list">
+            <image src="../../assets/images/ico-1.png" class="ico" wx:if="{{isStateA == '0'}}"></image>
+            <image src="../../assets/images/ico-1-on.png" class="ico" wx:if="{{isStateA == '1'}}"></image>
+            <text>颜值C位</text>
+        </view>
+        <view class="ico-list">
+            <image src="../../assets/images/ico-2.png" class="ico" wx:if="{{isStateB == '0'}}"></image>
+            <image src="../../assets/images/ico-2-on.png" class="ico" wx:if="{{isStateB == '1'}}"></image>
+            <text>职场C位</text>
+        </view>
+        <view class="ico-list">
+            <image src="../../assets/images/ico-3.png" class="ico" wx:if="{{isStateC == '0'}}"></image>
+            <image src="../../assets/images/ico-3-on.png" class="ico" wx:if="{{isStateC == '1'}}"></image>
+            <text>桃花运C位</text>
+        </view>
+        <view class="ico-list">
+            <image src="../../assets/images/ico-4.png" class="ico" wx:if="{{isStateD == '0'}}"></image>
+            <image src="../../assets/images/ico-4-on.png" class="ico" wx:if="{{isStateD == '1'}}"></image>
+            <text>健康C位</text>
+        </view>
+    </view>
+
+
+        <view class="control-2" wx:if="{{owner=='0'}}">
+                <image src="../../assets/images/btn-help.png" bindtap="userHelp"></image>
+                <image src="../../assets/images/btn-want.png" bindtap="wantJoin"></image>
+            </view>
+
+        <block wx:if="{{owner!='0'}}">
+            <view class="control-1" wx:if="{{isSuccess==2}}">
+                        <image src="../../assets/images/btn-invite.png" class="btn-invite"></image>
+                        <text>集齐其他3位C位可参与抽奖</text>
+                        <text>有机会获得丰厚礼品，快请好友帮忙吧！</text>
+                </view>
+                <view class="control-3" wx:if="{{isSuccess==1}}">
+                            <image src="../../assets/images/cj-tiptxt.png" class="cj-tiptxt"></image>
+                            <image src="../../assets/images/btn-cj.png" class="btn-cj" bindtap="lottery"  wx:if="{{drawType=='0'}}"></image>
+                            <block wx:if="{{drawType!='0'}}">
+                            <image src="../../assets/images/btn-ck.png" class="btn-cj" bindtap="gotoshow"  wx:if="{{isReceive=='1'}}"></image>
+                            <image src="../../assets/images/btn-lj.png" class="btn-cj" bindtap="lottery"  wx:if="{{isReceive=='0'}}" bindtap="gotoform" ></image>
+                            </block>
+                        </view>
+                    </block>
+
+     <view class="adv"><button class="linkminiapp"  bindtap="gotominiapp">速速抢购</button></view>
+</view>
+<view class="tipbox" wx:if="{{tipshow == '1'}}">
+        <view class="tipclose" bindtap="closetip"><image src="../../assets/images/tipclose.png"></image></view>
+        <view class="tipboxtxt">{{showtip}}</view>
+        <image src="../../assets/images/btn-confirm.png" class="btnget" bindtap="gotohome"></image>
+    </view>
+ <view class="maskbox" wx:if="{{tipshow == '1'}}"></view>

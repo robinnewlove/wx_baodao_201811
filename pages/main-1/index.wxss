@@ -1,0 +1,92 @@
+page{background: #ffb9bb;}
+
+.resultbox{background: url("https://werun.renlai.fun/static/cposition/resultbg.png"); width: 750rpx;height: 392rpx; background-size: 100% auto; position: relative;}
+.txt-1{width:750rpx; height:202rpx;}
+
+.avatarbox{width: 140rpx; height: 140rpx; border:6rpx solid #fff;border-radius: 140rpx;overflow: hidden;box-shadow: 0px 0px 10px #ffacb6;margin: auto;}
+.avatar{width: 140rpx; height: 140rpx;}
+
+.ico{width: 101rpx; height: 101rpx;display:inline-block;}
+.ico-list-box{text-align: center; padding-top:10rpx;}
+.ico-list{width: 160rpx; font-size: 26rpx; display: inline-block;text-align: center;}
+.ico-list text{display: block;color:#fff;text-shadow:2px 2px 3px #ffacb6;}
+
+.btn-invite{width: 188rpx; height: 48rpx;margin-bottom: 5rpx;}
+
+.control-1{ text-align: center;font-size:20rpx;padding-top:20rpx;}
+.control-1 text{display: block; color: #605f64;}
+.control-2{text-align: center;padding-top: 30rpx;}
+
+.control-2 image{width: 188rpx; height: 48rpx;margin: 0 30rpx;}
+
+.control-3{text-align: center;padding-top: 10rpx; text-align: center}
+.control-3 image{display:block; margin: auto}
+.control-3 image.cj-tiptxt{width: 277rpx; height: 33rpx;margin-bottom: 10rpx;margin-top: 20rpx;}
+.control-3 image.btn-cj{width:188rpx; height:49rpx;}
+
+
+.radarContainer{
+  background-color:none;
+  width:365rpx;
+  height:300rpx;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position:absolute;top:43rpx;left: 50%;margin-left: -320rpx;
+
+}
+.radarCanvas{
+  width:365rpx;
+  height:300rpx;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.radarContainer .text-1,.radarContainer .text-2,.radarContainer .text-3,.radarContainer .text-4{position: absolute;font-size: 20rpx;color: #fff;display: block; text-align: center;}
+.radarContainer text{display: block; text-align: center}
+.radarContainer .text-1{top:10rpx;}
+.radarContainer .text-2{right:18rpx;}
+.radarContainer .text-3{bottom:10rpx;}
+.radarContainer .text-4{left:18rpx;}
+
+.txt-1-tip{width: 131rpx; height: 63rpx;
+  position: absolute;right: 100rpx;top:280rpx;}
+.txt-1-tip image{width: 131rpx; height: 63rpx;}
+.radarAvatarbox{width: 200rpx; height: 200rpx;border-radius: 140rpx;overflow: hidden;box-shadow: 0px 5px 10px #ff6374;position: absolute;right: 70rpx;top:69rpx;}
+.radarAvatarbox image{width: 200rpx; height: 200rpx;}
+
+
+
+/*share*/
+
+/*分享*/
+.sharebox{position:fixed; bottom: 0px;width: 100%; height: 250rpx;background: #fff; border-top: 1px solid #eee;bottom:-450rpx;z-index: 99;}
+.sharebox text{display: block; text-align: center;font-size: 24rpx; color: #666;}
+.sharebox-1{width: 50%; height: 150rpx;float: left;text-align: center; padding-top: 50rpx;}
+.share-1{width:120rpx; height: 100rpx;background: url('https://werun.renlai.fun/static/cposition/share-ico-1.png');background-size: 120rpx 100rpx; border: 0px;}
+.share-1::after{
+  border: none;
+}
+
+.share-2{width:120rpx; height: 100rpx;background: url('https://werun.renlai.fun/static/cposition/share-ico-2.png');background-size: 120rpx 100rpx; border: 0px;}
+.share-2::after{
+  border: none;
+}
+
+.sharebox-2{width: 50%; height: 150rpx;float: left;text-align: center; padding-top: 50rpx;}
+.sharebox-2 image{width:120rpx; height: 100rpx;}
+
+/*遮照*/
+.maskbox{position:fixed;background: #000;width:100%;top:0;bottom: 0;opacity: 0.2;z-index: 98;display: none;}
+.show{display: inline-block;}
+
+
+
+.shareimgbox{position: fixed;top:0px;bottom: 0px;background: #000000;width: 100%;padding-top: 50px; overflow: hidden;z-index: 999}
+
+.shareimgboxbody{margin: auto;margin-bottom: 20px;position: relative;}
+.closeshare{position: absolute;width: 60rpx;height: 60rpx; display: inline-block;top:-70rpx;right: -70rpx;background: url('https://werun.renlai.fun/static/cposition/close.png'); background-size: 100% 100%;padding: 0px; border: 0px;z-index: 9999}
+.closeshare::after{
+  border: none;
+}
+

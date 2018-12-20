@@ -1,0 +1,47 @@
+{
+  "pages":[
+
+    "pages/home/index",
+
+    "pages/form/form-3/index",
+    "pages/show/show-3/index",
+
+    "pages/show/show-2/index",
+
+
+    "pages/avatarUpload/index/index",
+
+
+    "pages/lottery/index",
+
+
+
+
+
+    "pages/main/index",
+
+    "pages/agreement/index",
+    "pages/rule/rule",
+
+
+
+    "pages/visit/index",
+
+
+    "pages/store/store",
+
+    "pages/show/show-1/index",
+    "pages/form/form-2/index",
+
+    "pages/form/form-1/index",
+
+    "pages/avatarUpload/upload/upload"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "抢C位赢壕礼",
+    "navigationBarTextStyle":"black"
+  },
+  "navigateToMiniProgramAppIdList": ["wx1eaeb97ab0fda6ae"]
+}

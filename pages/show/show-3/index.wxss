@@ -1,0 +1,21 @@
+page{background: url("https://werun.renlai.fun/static/cposition/showbg-1.jpg?123"); min-height: 1440rpx;background-size: 100% auto; background-repeat: no-repeat}
+
+
+.codebox{text-align: center; color: #ff3657;line-height: 130%; padding-bottom: 30rpx; font-size:28rpx; padding-top:250rpx;}
+.codebox-img{width: 285rpx; height: 285rpx; margin: auto; margin-bottom: 15rpx;}
+.codebox-img image{width: 285rpx; height: 285rpx}
+
+.codebox-1{text-align: center; color: #ff3657;line-height: 130%; padding-bottom: 30rpx; font-size: 35rpx;padding:30rpx 0 70rpx 0}
+.codebox-txt{border: 1px solid #ff356b; background: #fff; width: 478rpx; height: 56rpx; background: #fff;line-height: 56rpx;margin: auto; text-align: center; margin-top:30rpx}
+
+.inputbox{overflow: hidden}
+
+
+.storebox{width: 600rpx; margin: auto; padding-top: 90rpx;font-size: 28rpx;display:block; padding-bottom: 30rpx;text-align: left; color: #666666}
+.store{width: 600rpx; height: 65rpx; line-height:65rpx;background: #fff;border: 1px solid  #ff6181;display: inline-block;text-align: center;overflow: hidden;white-space: nowrap;margin-top: 5rpx;}
+
+
+.form-txt{font-size:20rpx; width: 560rpx; margin: auto;color: #717171;line-height: 160%;  }
+.form-txt view{position: relative;padding-left: 20rpx;}
+.form-txt view text{position: absolute;left: 0rpx;}
+.form-txt .title{padding-left: 0;margin-bottom: 10rpx;}

@@ -1,0 +1,100 @@
+<view>
+    <view class="logobox"><navigator url="/pages/rule/rule" hover-class="navigator-hover">活动规则</navigator><image src="../../assets/images/logo.jpg" class="logo"></image></view>
+    <view class="lotterybox">
+        <view class="lotteryselectbox">
+            <view class="lotteryselect" wx:if="{{lootery != '1'}}">
+                <image src="../../assets/images/pro01.png"></image>
+                <text>强生试戴片</text>
+            </view>
+            <view class="lotteryselect lotteryselect-on" wx:if="{{lootery == '1'}}">
+                            <image src="../../assets/images/pro01.png"></image>
+                            <text>强生试戴片</text>
+                        </view>
+
+
+            <view class="lotteryselect"  wx:if="{{lootery != '2'}}">
+                <image src="../../assets/images/pro02.png"></image>
+                <text>拍立得</text>
+            </view>
+            <view class="lotteryselect lotteryselect-on" wx:if="{{lootery == '2'}}">
+                            <image src="../../assets/images/pro02.png"></image>
+                            <text>拍立得</text>
+                        </view>
+
+
+
+
+            <view class="lotteryselect"  wx:if="{{lootery != '3'}}">
+                <image src="../../assets/images/pro01.png"></image>
+                <text>强生试戴片</text>
+            </view>
+            <view class="lotteryselect lotteryselect-on"  wx:if="{{lootery == '3'}}">
+                            <image src="../../assets/images/pro01.png"></image>
+                            <text>强生试戴片</text>
+                        </view>
+
+            <view class="lotteryselect" wx:if="{{lootery != '8'}}">
+                <image src="../../assets/images/pro03.png"></image>
+                <text>面值100元 星巴克</text>
+            </view>
+            <view class="lotteryselect  lotteryselect-on" wx:if="{{lootery == '8'}}">
+                            <image src="../../assets/images/pro03.png"></image>
+                            <text>面值100元 星巴克</text>
+                        </view>
+
+
+            <view class="lotterystart" wx:if="{{cando != '1'}}">
+                <image src="../../assets/images/lottery-start.png" bindtap="lottery" ></image>
+            </view>
+            <view class="lotterystart" wx:if="{{cando == '1'}}">
+                            <image src="../../assets/images/lottery-start.png"></image>
+                        </view>
+
+
+            <view class="lotteryselect"  wx:if="{{lootery != '4'}}">
+                <image src="../../assets/images/pro04.png"></image>
+                <text>面值58元 爱奇艺</text>
+            </view>
+            <view class="lotteryselect lotteryselect-on"  wx:if="{{lootery == '4'}}">
+                            <image src="../../assets/images/pro04.png"></image>
+                            <text>面值58元 爱奇艺</text>
+                        </view>
+
+            <view class="lotteryselect"  wx:if="{{lootery != '7'}}">
+                <image src="../../assets/images/pro05.png"></image>
+                <text>爱马仕丝巾</text>
+            </view>
+            <view class="lotteryselect lotteryselect-on"   wx:if="{{lootery == '7'}}">
+                            <image src="../../assets/images/pro05.png"></image>
+                            <text>爱马仕丝巾</text>
+                        </view>
+
+
+            <view class="lotteryselect"  wx:if="{{lootery != '6'}}">
+                <image src="../../assets/images/pro03.png"></image>
+                <text>面值50元 星巴克</text>
+            </view>
+            <view class="lotteryselect lotteryselect-on"   wx:if="{{lootery == '6'}}">
+                            <image src="../../assets/images/pro03.png"></image>
+                            <text>面值50元 星巴克</text>
+                        </view>
+
+            <view class="lotteryselect"  wx:if="{{lootery != '5'}}">
+                <image src="../../assets/images/pro01.png"></image>
+                <text>强生试戴片</text>
+            </view>
+            <view class="lotteryselect lotteryselect-on"   wx:if="{{lootery == '5'}}">
+                            <image src="../../assets/images/pro01.png"></image>
+                            <text>强生试戴片</text>
+                        </view>
+        </view>
+        <view class="lotterytip">*奖品图片仅供参考，以实物为准</view>
+    </view>
+    <view class="adv"><button class="linkminiapp" bindtap="gotominiapp">速速抢购</button></view>
+
+    <view class="tipbox" wx:if="{{tipshow == '1'}}">
+        <view class="tipboxtxt">恭喜您抽中{{proname}}</view>
+        <image src="../../assets/images/btn-get.png" class="btnget" bindtap="btnGet"></image>
+    </view>
+    <view class="maskbox" wx:if="{{tipshow == '1'}}"></view>
+</view>
